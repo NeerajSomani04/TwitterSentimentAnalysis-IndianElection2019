@@ -1,0 +1,95 @@
+Text Processing and Sentiment Analysis of Twitter Data for Indian Lok Sabha Election 2019
+
+Major Parties -->
+
+1) Bharatiya Janta Party
+2) Congress
+3) AamAadmiParty
+4) Samaj Wadi Party
+
+Below are few hashtags that I can use to scrape the data --> 
+#VoteForIndia
+#IndiaVote
+#IndiaVotes
+#IndianElection2019
+#BJP
+#Congress
+#NarendraModi
+#RahulGandi
+#PMModi
+#LokSabhaElections2019
+#AAP
+#AamAadmiParty
+
+
+Few Key Questions that can be answered -->
+
+2) How many tweets are for each party (eg: how many tweets contain bjp or related party terms)
+Count the number of tweets contains the words related to each party
+
+4) How many times major leader names came in tweets? Which leader name was mostly used?
+Count the number of tweets that contains the leader name.
+
+- Narendra Modi
+- Rahul Gandhi
+- Arvind Kejriwal
+
+5) Which leader/party had more positive vs negative sentiments?
+Will do sentiment analysis of text for positive vs negative 
+
+6) frequency of the words (word count)
+Which word has highest frequency 
+Which hashtag has highest frequency
+We can calculate the percentage as well to understand this
+
+8) which date has maximum number of tweets for which specific party or leader
+
+9) which tweet has highest likes, replies, and retweets and compare this against each party leader
+
+Items that I need to get based on above questions →
+Tweets
+Date of tweet
+Reply count
+Retweet count
+Like count
+Analysis Candidate Wise -->
+Analysis Constituency Wise -->
+
+An awesome article about election win on Twitter but this was for 2014
+
+https://www.theatlantic.com/international/archive/2014/05/modi-won-the-indian-election-on-twitter-too/371057/
+
+sentiment analysis for election 2019:
+1) How many positive vs negative vs nutral tweets
+2) majorly categised sentiments are "anger", "anticiaption", "disgust", "fear"
+3) word count distribution for both positive and negative tweets. This means we can count the number of words in each tweet and then relate it with positivity and negativity of tweets.
+
+https://medium.com/analytics-vidhya/twitter-sentiment-analysis-for-the-2019-election-8f7d52af1887
+https://www.indiamacroadvisors.com/page/category/politics/twitter-analysis
+https://towardsdatascience.com/sentiment-analysis-using-deep-learning-techniques-with-india-elections-2019-a-case-study-451549c8eb46
+
+Below is an awesome file that tells a lot about major Hashtag used so far -->
+https://www.indiamacroadvisors.com/public/uploads/ckImages/Top_hashtags_final22.pdf
+
+
+
+some github repos -->
+https://github.com/harshitsaini/Analysis-of-Indian-general-election-2019
+
+https://github.com/pratapvardhan/Elections-India-2014
+
+https://gist.github.com/vickyqian/f70e9ab3910c7c290d9d715491cde44c
+
+https://github.com/WUJJU/ScrapyTwitter/blob/master/splashtry/spiders/trysplash.py
+
+https://github.com/PlayingNumbers/Captain_Marvel_Sentiment/blob/master/sentiment_a.py
+
+
+https://github.com/tthustla/twitter_sentiment_analysis_part1/blob/master/Capstone_part2.ipynb
+
+
+Below Questions can't be answered with our EDA -->
+
+1) How many tweets happened starting 1 jan 2019 till election result day?
+This is just the count of all tweets that we collected. This can't be done because I collected only 10,000 tweets per day.
+3) From which country/location tweets were?  → this can’t be answered using twitterscraper package.
